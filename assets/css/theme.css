@@ -86,10 +86,62 @@ video {
 @media (min-width: 992px) and (max-width: 1199.98px) {}
 
 /*======== medium device =========*/
-@media (min-width: 768px) and (max-width: 991.98px) {}
+@media (min-width: 768px) and (max-width: 991.98px) {
+	#banner-part .text-content {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 0px 200px;
+    }
+
+    blockquote {
+        position: relative;
+        margin: 0;
+        padding-left: 0px;
+        font-size: 36px !important;
+        border-left: 4px solid #3e3e3e;
+    }
+
+    #banner-part blockquote.open-quote::before {
+        position: absolute;
+        content: open-quote;
+        top: 0;
+        left: 38px;
+        font-size: 80px;
+        font-weight: 300;
+        color: #D2D2D2;
+        line-height: 1;
+    }
+}
 
 /*======== small device =========*/
-@media (min-width: 576px) and (max-width: 767.98px) {}
+@media (min-width: 576px) and (max-width: 767.98px) {
+	#banner-part .text-content {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 0px 30px;
+    }
+
+    blockquote {
+        position: relative;
+        margin: 0;
+        padding-left: 0px;
+        font-size: 22px !important;
+        border-left: 4px solid #3e3e3e;
+    }
+
+    #banner-part blockquote.open-quote::before {
+        position: absolute;
+        content: open-quote;
+        top: 0;
+        left: 38px;
+        font-size: 66px;
+        font-weight: 300;
+        color: #D2D2D2;
+        line-height: 1;
+    }
+}
 
 /*======== Extra small device =========*/
 @media (max-width: 575.98px) {
