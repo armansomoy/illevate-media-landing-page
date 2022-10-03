@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "skarpa-fonts";
+    src: url(../fonts/Skarpa\ regular.ttf);
+}
+
+
+
 #banner-part {
     height: 100vh;
     position: relative;
@@ -63,21 +70,32 @@ video {
     line-height: 1;
 }
 
+#banner-part blockquote.open-quote::after {
+    position: absolute;
+    content: close-quote;
+    bottom: 65px;
+    right: 0;
+    font-size: 84px;
+    font-weight: 300;
+    color: #D2D2D2;
+    line-height: 1;
+}
+
 
 #banner-part blockquote footer {
     display: block;
     margin-top: 20px;
-    font-size: 100%;
+    font-size: 90%;
     color: #999;
 }
 
 #banner-part blockquote footer::before {
     display: inline-block;
     content: "";
-    width: 40px;
+    width: 20px;
     height: 2px;
     background-color: #7d7d7d;
-    margin: 0 10px 5px 0;
+    margin: 0 10px 10px 0;
 }
 
 
@@ -87,7 +105,7 @@ video {
 
 /*======== medium device =========*/
 @media (min-width: 768px) and (max-width: 991.98px) {
-	#banner-part .text-content {
+    #banner-part .text-content {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -116,7 +134,7 @@ video {
 
 /*======== small device =========*/
 @media (min-width: 576px) and (max-width: 767.98px) {
-	#banner-part .text-content {
+    #banner-part .text-content {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -140,6 +158,20 @@ video {
         font-weight: 300;
         color: #D2D2D2;
         line-height: 1;
+    }
+
+    #banner-part blockquote.open-quote::after {
+        position: absolute;
+        content: close-quote;
+        bottom: 28px;
+        right: 134px;
+        font-size: 60px;
+        font-weight: 300;
+        color: #D2D2D2;
+        line-height: 1;
+    }
+    blockquote .bold {
+        letter-spacing: 2px;
     }
 }
 
@@ -169,6 +201,37 @@ video {
         font-weight: 300;
         color: #D2D2D2;
         line-height: 1;
+    }
+
+    #banner-part blockquote footer {
+        display: block;
+        margin-top: 20px;
+        font-size: 70%;
+        color: #999;
+    }
+
+    #banner-part blockquote footer::before {
+        display: inline-block;
+        content: "";
+        width: 10px;
+        height: 2px;
+        background-color: #7d7d7d;
+        margin: 0 10px 3px 0;
+    }
+
+    #banner-part blockquote.open-quote::after {
+        position: absolute;
+        content: close-quote;
+        bottom: 11px;
+        right: 40px;
+        font-size: 60px;
+        font-weight: 300;
+        color: #D2D2D2;
+        line-height: 1;
+      
+    }
+    blockquote .bold {
+        letter-spacing: 2px;
     }
 }
 
@@ -365,7 +428,7 @@ h6,
 .tt-scrolling-text,
 #blog-list.bli-compact .bli-info::before,
 .blog-interactive-item::before {
-    font-family: 'Noto Serif JP', serif;
+    font-family: "skarpa-fonts";
 }
 
 
@@ -8243,12 +8306,18 @@ table.tt-table tfoot td {
  * Blockquote
 /* ------------------------------------------------------------- */
 
+blockquote .bold {
+    letter-spacing: 4px;
+}
+
 blockquote {
     position: relative;
     margin: 35px 5%;
     padding-left: 40px;
-    font-size: 32px;
+    font-size: 42px;
     border-left: 4px solid #3e3e3e;
+    font-family: "skarpa-fonts";
+
 }
 
 @media (max-width: 768px) {
