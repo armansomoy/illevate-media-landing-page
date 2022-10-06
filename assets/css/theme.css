@@ -1,9 +1,12 @@
 @font-face {
-    font-family: "skarpa-fonts";
-    src: url(../fonts/Skarpa\ regular.ttf);
+    font-family: "PlayfairDisplay-Regular";
+    src: url(../fonts/PlayfairDisplay-Regular.ttf);
 }
 
-
+.about-video-part{
+    height: 550px;
+    overflow: hidden;
+}
 
 #banner-part {
     height: 100vh;
@@ -252,7 +255,7 @@ body {
 
 body {
     position: relative;
-    background-color: #0a0a0a;
+    background-color: #000;
     line-height: 1.7;
     font-size: 19px;
     font-weight: normal;
@@ -428,7 +431,7 @@ h6,
 .tt-scrolling-text,
 #blog-list.bli-compact .bli-info::before,
 .blog-interactive-item::before {
-    font-family: "skarpa-fonts";
+    font-family: "PlayfairDisplay-Regular";
 }
 
 
@@ -2583,7 +2586,7 @@ body:not(.tt-boxed) .page-header-inner,
     color: #FFF;
     white-space: nowrap;
     line-height: 1;
-    opacity: .04;
+    opacity: .08;
     z-index: 1;
 }
 
