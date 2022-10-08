@@ -3,7 +3,23 @@
     src: url(../fonts/PlayfairDisplay-Regular.ttf);
 }
 
-.about-video-part{
+.about-logo {
+    height: 125px;
+    width: 200px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.works-video {
+    height: 660px;
+    overflow: hidden;
+}
+
+.about-logo img {
+    width: 100%;
+}
+
+.about-video-part {
     height: 550px;
     overflow: hidden;
 }
@@ -76,11 +92,11 @@ video {
 #banner-part blockquote.open-quote::after {
     position: absolute;
     content: close-quote;
-    bottom: 65px;
-    right: 0;
+    bottom: 101px;
+    right: 83px;
     font-size: 84px;
     font-weight: 300;
-    color: #D2D2D2;
+    color: rgb(210, 210, 210);
     line-height: 1;
 }
 
@@ -88,7 +104,7 @@ video {
 #banner-part blockquote footer {
     display: block;
     margin-top: 20px;
-    font-size: 90%;
+    font-size: 70%;
     color: #999;
 }
 
@@ -173,6 +189,7 @@ video {
         color: #D2D2D2;
         line-height: 1;
     }
+
     blockquote .bold {
         letter-spacing: 2px;
     }
@@ -231,8 +248,9 @@ video {
         font-weight: 300;
         color: #D2D2D2;
         line-height: 1;
-      
+
     }
+
     blockquote .bold {
         letter-spacing: 2px;
     }
@@ -2586,7 +2604,7 @@ body:not(.tt-boxed) .page-header-inner,
     color: #FFF;
     white-space: nowrap;
     line-height: 1;
-    opacity: .08;
+    opacity: .02;
     z-index: 1;
 }
 
