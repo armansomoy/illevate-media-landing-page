@@ -3,6 +3,10 @@
     src: url(../fonts/PlayfairDisplay-Regular.ttf);
 }
 
+#about-part .tt-section {
+    margin-top: -220px;
+}
+
 .about-logo {
     height: 125px;
     width: 200px;
@@ -190,10 +194,34 @@ video {
         line-height: 1;
     }
 
+    .tt-overlay-menu {
+        width: 60% !important;
+    }
+
+    .tt-ol-menu-list>li>a,
+    .tt-ol-menu-list>li>.tt-ol-submenu-trigger>a {
+        font-size: 22px !important;
+    }
+    #about-part .tt-section {
+        margin-top: -90px;
+    }
 }
 
 /*======== Extra small device =========*/
 @media (max-width: 575.98px) {
+    .tt-overlay-menu {
+        width: 60% !important;
+    }
+
+    #about-part .tt-section {
+        margin-top: -90px;
+    }
+
+    .tt-ol-menu-list>li>a,
+    .tt-ol-menu-list>li>.tt-ol-submenu-trigger>a {
+        font-size: 21px !important;
+    }
+
     #banner-part .text-content {
         position: absolute;
         top: 50%;
@@ -239,13 +267,12 @@ video {
     #banner-part blockquote.open-quote::after {
         position: absolute;
         content: close-quote;
-        bottom: 11px;
-        right: 40px;
+        bottom: 35px;
+        right: -11px;
         font-size: 60px;
         font-weight: 300;
         color: #D2D2D2;
         line-height: 1;
-
     }
 }
 
@@ -903,7 +930,7 @@ h6 {
 /* tt-Headings title */
 .tt-heading-title {
     margin: 0;
-    font-size: calc(24px + 1vw);
+    font-size: calc(24px + 2vw);
     font-weight: bold;
     font-weight: 500;
     color: #FFF;
@@ -1737,8 +1764,8 @@ body:not(.tt-boxed) .tt-header-inner,
 .tt-overlay-menu {
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
+    right: 0;
+    width: 40%;
     height: 100vh;
     background-color: #0a0a0a;
     visibility: hidden;

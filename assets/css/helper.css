@@ -263,7 +263,7 @@ p.text-xlg {
 }
 
 .text-xxlg {
-	font-size: calc(100% + 0.7vw) !important;
+	font-size: calc(100% + 0.2vw) !important;
 }
 .text-xxlg p,
 p.text-xxlg {
